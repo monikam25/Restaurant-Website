@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant</title>
+    <link rel="stylesheet" href="r.css">
+</head>
+<body>
+   <div class="image">
+    <img src="https://assets3.thrillist.com/v1/image/3135815/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70" alt="" width="100%">
+    <div class="text1">
+        <p><button onclick="document.getElementById('menu').style.display='block'" class="button">menu</button></p>
+        
+       <p><button onclick="document.getElementById('contact').style.display='block'" class="button">contact</button></p>
+    </div>
+    
+    <div class="text2">
+        <h4>Open: mon-fri|10am to 11pm</h4>
+        <h4>on sat till 12am</h4>
+        <h4>42 villages,New Delhi</h4>
+    </div>
+   </div>
+
+
+   <div id="menu" class="modal" style="display: none;">
+<div class="modal-content zoom1">
+    <div class="container">
+        <span onclick="document.getElementById('menu').style.display='none'" class="button topright large">
+        x</span>
+        <h1>starters</h1>
+    </div>
+<div class="container1">
+    <h5>"tomato soup"<b>Rs.120/-</b></h5>
+        <h5>"orange juce"<b>Rs.80/-</b> </h5>
+        <h5>"bread and butter"<b>Rs.70/-</b></h5>
+</div>
+<div class="container2">
+    <h1>main course</h1>
+</div>
+<div class="container1">
+    <h5>"Dosa"<b>Rs.120/-</b></h5>
+        <h5>"Paaw Bhaaji"<b>Rs.80/-</b> </h5>
+        <h5>"Chole Bhature"<b>Rs.150/-</b></h5>
+        <h5>"Pizza"<b>Rs.200/-</b> </h5>
+        <h5>"Chole kulche"<b>Rs.70/-</b></h5>
+</div>
+<div class="container2">
+    <h1>Desserts</h1>
+</div>
+<div class="container1">
+    <h5>"Jalei Rabdi"<b>Rs.100/-</b></h5>
+        <h5>"Meetha paan"<b>Rs.80/-</b> </h5>
+        <h5>"strawerry icecream"<b>Rs.90/-</b></h5>
+        <h5>"Rasogulla(2p pieces)"<b>Rs.100/-</b> </h5>
+        <h5>"Rasmalai"<b>Rs.70/-</b></h5>
+</div>
+
+</div></div>
+<div id="contact" class="modal" style="display: none;">
+    <div class="modal-content zoom1">
+        <div class="conatiner">
+            <span onclick="document.getElementById('contact').style.display='none'" class="button topright large">x</span>
+            <h1>Contact</h1>
+        </div>
+        <div class="container1">
+            <p>Reserve a table for today or just send us a message:</p>
+            <form action="/action_page.php" target="_blank">
+                <p>
+                    <input class="input border padding" 
+                    type="text" placeholder="Name" required name="Name">
+                </p>
+                <p>
+                    <input class="input border padding" 
+                    type="number" placeholder="How many people" required name="people">
+                </p>
+                <p>
+                    <input class="input border padding" 
+                    type="datetime-local" placeholder="Date and Time" required name="Date">
+                </p>
+                <p>
+                    <input class="input border padding" 
+                    type="text" placeholder="Message" required name="Message">
+                </p>
+                <p>
+                    <button class="button" 
+                    type="sumit">Send Message</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
